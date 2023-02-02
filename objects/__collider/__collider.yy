@@ -2,14 +2,24 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "__collider",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"__hurtbox","path":"objects/__hurtbox/__hurtbox.yy",},"propertyId":{"name":"invincible","path":"objects/__hurtbox/__hurtbox.yy",},"value":"True",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"__hurtbox","path":"objects/__hurtbox/__hurtbox.yy",},"propertyId":{"name":"receive_damage","path":"objects/__hurtbox/__hurtbox.yy",},"value":"invulnerable_receive_damage",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"__hurtbox","path":"objects/__hurtbox/__hurtbox.yy",},"propertyId":{"name":"receive_impulse_position","path":"objects/__hurtbox/__hurtbox.yy",},"value":"immune_receive_impulse",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"__hurtbox","path":"objects/__hurtbox/__hurtbox.yy",},"propertyId":{"name":"receive_impulse_direction","path":"objects/__hurtbox/__hurtbox.yy",},"value":"immune_receive_impulse",},
+  ],
   "parent": {
     "name": "Collision",
     "path": "folders/_Core/Collision.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "__hurtbox",
+    "path": "objects/__hurtbox/__hurtbox.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -23,7 +33,12 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"collide_right","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"collide_right_solid","varType":4,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"collide_left","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"collide_left_solid","varType":4,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"collide_top","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"collide_top_solid","varType":4,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"collide_bottom","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"collide_bottom_solid","varType":4,},
+  ],
   "solid": false,
   "spriteId": {
     "name": "sCollider",
