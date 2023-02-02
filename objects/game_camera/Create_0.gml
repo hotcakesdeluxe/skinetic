@@ -10,8 +10,8 @@ follow_x = x;
 follow_y = y;
 follow   = noone;
 
-var _width  = display_get_width(),
-	_height = display_get_height()
+var _width  = display_get_width() /2 ,
+	_height = display_get_height() / 2
 		
 if (_width > _height)
 {
