@@ -13,8 +13,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"__hurtbox","path":"objects/__hurtbox/__hurtbox.yy",},"propertyId":{"name":"receive_impulse_direction","path":"objects/__hurtbox/__hurtbox.yy",},"value":"immune_receive_impulse",},
   ],
   "parent": {
-    "name": "Collision",
-    "path": "folders/_Core/Collision.yy",
+    "name": "Game",
+    "path": "folders/_Core/Game.yy",
   },
   "parentObjectId": {
     "name": "__hurtbox",

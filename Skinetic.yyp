@@ -47,6 +47,7 @@
     {"id":{"name":"sGameCamera","path":"sprites/sGameCamera/sGameCamera.yy",},"order":0,},
     {"id":{"name":"__entity","path":"objects/__entity/__entity.yy",},"order":0,},
     {"id":{"name":"game_camera","path":"objects/game_camera/game_camera.yy",},"order":0,},
+    {"id":{"name":"game_state","path":"objects/game_state/game_state.yy",},"order":0,},
     {"id":{"name":"sHurtbox","path":"sprites/sHurtbox/sHurtbox.yy",},"order":0,},
     {"id":{"name":"sCollider","path":"sprites/sCollider/sCollider.yy",},"order":0,},
     {"id":{"name":"sHitbox","path":"sprites/sHitbox/sHitbox.yy",},"order":0,},
