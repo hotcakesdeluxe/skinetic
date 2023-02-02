@@ -1,15 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "__collider",
+  "name": "oBasicPlayer",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Collision",
-    "path": "folders/_Core/Collision.yy",
+    "name": "Characters",
+    "path": "folders/Objects/Characters.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "__character",
+    "path": "objects/__character/__character.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -26,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sCollider",
-    "path": "sprites/sCollider/sCollider.yy",
+    "name": "sPlayer",
+    "path": "sprites/sPlayer/sPlayer.yy",
   },
   "spriteMaskId": null,
   "visible": true,

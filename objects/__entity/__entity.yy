@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "__collider",
+  "name": "__entity",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Collision",
-    "path": "folders/_Core/Collision.yy",
+    "name": "Game",
+    "path": "folders/_Core/Game.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sCollider",
-    "path": "sprites/sCollider/sCollider.yy",
+    "name": "sSys",
+    "path": "sprites/sSys/sSys.yy",
   },
   "spriteMaskId": null,
   "visible": true,
