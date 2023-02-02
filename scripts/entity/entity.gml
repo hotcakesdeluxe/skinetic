@@ -19,21 +19,26 @@ function entity_move_collide(_velocity_x, _velocity_y)
 	y += _velocity_y;
 	ds_list_clear(collision_list);
 	_collisions = instance_place_list(x, y + sign(_velocity_y), __collider, collision_list, false);
-
+	
 	if (_collisions)
 	{
+		
 		var _resolved_y = y;
 		if (_velocity_y > 0)
 		{
 			// Loop through collisions and find the min y value
 			for (var _i = 0; _i < _collisions; _i++)
+			{
 				_resolved_y = collision_list[| _i].collide_bottom(id, _resolved_y);
+			}
 		}
 		else if (_velocity_y < 0)
 		{
 			// Loop through collisions and find the max y value
 			for (var _i = 0; _i < _collisions; _i++)
+			{
 				_resolved_y = collision_list[| _i].collide_top(id, _resolved_y);
+			}
 		}
 		
 		// If a collision was resolved then set vertical collision direction
@@ -41,6 +46,7 @@ function entity_move_collide(_velocity_x, _velocity_y)
 			on_vertical = sign(_velocity_y) * C_ON_VERTICAL_FRAMES;
 		
 		y = _resolved_y;
+		
 	}
 	
 	// ********** Horizontal ****************************** //
@@ -54,14 +60,17 @@ function entity_move_collide(_velocity_x, _velocity_y)
 		if (_velocity_x > 0)
 		{
 			// Loop through collisions and find the min x value
-			for (var _i = 0; _i < _collisions; _i++)
+			for (var _i = 0; _i < _collisions; _i++){
 				_resolved_x = collision_list[| _i].collide_right(id, _resolved_x);
+			}
 		}
 		else if (_velocity_x < 0)
 		{
 			// Loop through collisions and find the max x value
 			for (var _i = 0; _i < _collisions; _i++)
+			{
 				_resolved_x = collision_list[| _i].collide_left(id, _resolved_x);
+			}
 		}
 		
 		// If a collision was resolved then set horizontal collision direction
@@ -69,5 +78,16 @@ function entity_move_collide(_velocity_x, _velocity_y)
 			on_horizontal = sign(_velocity_x) * C_ON_HORIZONTAL_FRAMES;
 			
 		x = _resolved_x;
+	}
+	//**********Moving************//
+	ds_list_clear(movingCollision_list);
+	_movingCollisions = instance_place_list(x, y + sign(_velocity_y), oMovingPlatform, movingCollision_list, false);
+	if(_movingCollisions)
+	{
+		for (var _i = 0; _i < _movingCollisions; _i++)
+		{
+			x += movingCollision_list[| _i].moveX;
+			y += movingCollision_list[| _i].moveY;
+		}
 	}
 }

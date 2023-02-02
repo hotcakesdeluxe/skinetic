@@ -34,6 +34,7 @@ function collide_none(_entity, _resolved_position)
 #endregion
 
 
+
 #region Slopes
 
 	function collide_left_slope(_entity, _resolved_x)

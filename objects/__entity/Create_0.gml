@@ -2,6 +2,7 @@ event_inherited();// this function uses the same event code as its parent along 
 
 // Stores collision instances
 collision_list = ds_list_create();
+movingCollision_list = ds_list_create();
 
 // These act as counters and indicate collision direction
 on_vertical   = 0;
