@@ -1,0 +1,48 @@
+{
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "oBomb",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"__character","path":"objects/__character/__character.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,},
+  ],
+  "managed": true,
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"__hurtbox","path":"objects/__hurtbox/__hurtbox.yy",},"propertyId":{"name":"hitpoints","path":"objects/__hurtbox/__hurtbox.yy",},"value":"3",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"__hurtbox","path":"objects/__hurtbox/__hurtbox.yy",},"propertyId":{"name":"receive_damage","path":"objects/__hurtbox/__hurtbox.yy",},"value":"self_receive_damage",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"__hurtbox","path":"objects/__hurtbox/__hurtbox.yy",},"propertyId":{"name":"receive_impulse_direction","path":"objects/__hurtbox/__hurtbox.yy",},"value":"immune_receive_impulse",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"__hurtbox","path":"objects/__hurtbox/__hurtbox.yy",},"propertyId":{"name":"receive_impulse_position","path":"objects/__hurtbox/__hurtbox.yy",},"value":"immune_receive_impulse",},
+  ],
+  "parent": {
+    "name": "Hazards",
+    "path": "folders/Objects/Hazards.yy",
+  },
+  "parentObjectId": {
+    "name": "__hurtbox",
+    "path": "objects/__hurtbox/__hurtbox.yy",
+  },
+  "persistent": false,
+  "physicsAngularDamping": 0.1,
+  "physicsDensity": 0.5,
+  "physicsFriction": 0.2,
+  "physicsGroup": 1,
+  "physicsKinematic": false,
+  "physicsLinearDamping": 0.1,
+  "physicsObject": false,
+  "physicsRestitution": 0.1,
+  "physicsSensor": false,
+  "physicsShape": 1,
+  "physicsShapePoints": [],
+  "physicsStartAwake": true,
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"blast_power","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"80","varType":0,},
+  ],
+  "solid": false,
+  "spriteId": {
+    "name": "sBomb",
+    "path": "sprites/sBomb/sBomb.yy",
+  },
+  "spriteMaskId": null,
+  "visible": true,
+}

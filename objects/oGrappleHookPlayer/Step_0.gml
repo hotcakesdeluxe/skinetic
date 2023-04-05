@@ -8,7 +8,17 @@ if(isGamepad)
 	gamepad_set_axis_deadzone(0, 0.2);
 	input_x = gamepad_axis_value(0, gp_axislh);
 	if (gamepad_button_check_pressed(0, gp_face1))
-		jump_remember = C_REMEMBER_FRAMES;		
+		jump_remember = C_REMEMBER_FRAMES;
+		
+	var xaxis = gamepad_axis_value(0, gp_axisrh);
+	var yaxis = gamepad_axis_value(0, gp_axisrv);
+	var spd_max = 16; // Maximum cursor speed for the gamepad.
+
+	offset_x += (spd_max*xaxis);
+	offset_y += (spd_max*yaxis);
+	
+	aim_x = clamp(offset_x, camera_get_view_x(VIEW), camera_get_view_x(VIEW)+camera_get_view_width(VIEW));
+	aim_y = clamp(offset_y, camera_get_view_y(VIEW), camera_get_view_y(VIEW)+camera_get_view_height(VIEW));
 }
 else
 {
