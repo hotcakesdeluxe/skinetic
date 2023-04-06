@@ -41,6 +41,7 @@
     {"id":{"name":"oMovingPlatform","path":"objects/oMovingPlatform/oMovingPlatform.yy",},"order":0,},
     {"id":{"name":"oPlatformerPlayer","path":"objects/oPlatformerPlayer/oPlatformerPlayer.yy",},"order":0,},
     {"id":{"name":"oBasicPlayer","path":"objects/oBasicPlayer/oBasicPlayer.yy",},"order":0,},
+    {"id":{"name":"sGrapple","path":"sprites/sGrapple/sGrapple.yy",},"order":0,},
     {"id":{"name":"entity","path":"scripts/entity/entity.yy",},"order":0,},
     {"id":{"name":"collisions","path":"scripts/collisions/collisions.yy",},"order":0,},
     {"id":{"name":"oPlatformPoint","path":"objects/oPlatformPoint/oPlatformPoint.yy",},"order":0,},

@@ -20,6 +20,7 @@
   "ResourceOrderSettings": [
     {"name":"__character","order":1,"path":"objects/__character/__character.yy",},
     {"name":"oPlatformerPlayer","order":1,"path":"objects/oPlatformerPlayer/oPlatformerPlayer.yy",},
+    {"name":"sGrapple","order":5,"path":"sprites/sGrapple/sGrapple.yy",},
     {"name":"entity","order":1,"path":"scripts/entity/entity.yy",},
     {"name":"oPlatformPoint","order":1,"path":"objects/oPlatformPoint/oPlatformPoint.yy",},
     {"name":"hurtbox","order":3,"path":"scripts/hurtbox/hurtbox.yy",},

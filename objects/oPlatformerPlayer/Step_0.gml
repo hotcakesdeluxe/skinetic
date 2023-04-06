@@ -7,7 +7,7 @@ if(isGamepad)
 {
 	gamepad_set_axis_deadzone(0, 0.2);
 	input_x = gamepad_axis_value(0, gp_axislh);
-	if (gamepad_button_check_pressed(0, gp_face1))
+	if (keyboard_check_pressed( vk_space))
 		jump_remember = C_REMEMBER_FRAMES;		
 }
 else

@@ -5,20 +5,27 @@ var _grav   = C_GRAVITY,
 
 if(isGamepad)
 {
-	gamepad_set_axis_deadzone(0, 0.2);
+	gamepad_set_axis_deadzone(0, 0.1);
 	input_x = gamepad_axis_value(0, gp_axislh);
 	if (gamepad_button_check_pressed(0, gp_face1))
 		jump_remember = C_REMEMBER_FRAMES;
 		
 	var xaxis = gamepad_axis_value(0, gp_axisrh);
 	var yaxis = gamepad_axis_value(0, gp_axisrv);
-	var spd_max = 16; // Maximum cursor speed for the gamepad.
+	var maxDist = 5; // Maximum cursor speed for the gamepad.
 
-	offset_x += (spd_max*xaxis);
-	offset_y += (spd_max*yaxis);
+	offset_x = (maxDist*xaxis + x);
+	offset_y = (maxDist*yaxis + y);
 	
-	aim_x = clamp(offset_x, camera_get_view_x(VIEW), camera_get_view_x(VIEW)+camera_get_view_width(VIEW));
-	aim_y = clamp(offset_y, camera_get_view_y(VIEW), camera_get_view_y(VIEW)+camera_get_view_height(VIEW));
+	aimDir = point_direction( 0, 0, xaxis, yaxis );
+	
+	aim_cos    = dcos(aimDir);
+	aim_sin    = -dsin(aimDir);
+	aimX      = x + (gun_length * aim_cos) * maxDist;
+	aimY      = y + (gun_length * aim_sin) * maxDist;
+	//aimX = x + lengthdir_x(maxDist, aimDir);
+	//aimY = y + lengthdir_y(maxDist, aimDir);
+		
 }
 else
 {
