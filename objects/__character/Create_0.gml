@@ -31,3 +31,4 @@ controls_text = "Unassigned";
 
 aim_dir = 0;
 hurtbox = create_hurtbox(id, team, hitpoints, sprite_width, sprite_height);
+

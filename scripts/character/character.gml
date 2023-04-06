@@ -1,5 +1,5 @@
-#macro C_TERMINAL_VELOCITY 25
-#macro C_MAXIMUM_IMPULSE_FORCE 1000
+#macro C_TERMINAL_VELOCITY 50
+#macro C_MAXIMUM_IMPULSE_FORCE 10000
 #macro C_GRAVITY 17
 
 function character_add_movement_input(_input_x, _input_y)
